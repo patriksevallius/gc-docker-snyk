@@ -8,7 +8,7 @@ RUN chmod +x ./gradlew
 RUN ./gradlew && ./gradlew jar
 
 # runtime container
-FROM openjdk:21-slim-buster
+FROM openjdk:22-ea-14-jdk-slim
 
 WORKDIR /app
 
